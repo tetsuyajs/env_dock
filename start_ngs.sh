@@ -7,6 +7,10 @@ share_cpath2=/mnt/ab_srv
 jupyter_port=9999
 ssh_port=2222
 password=`cat password.txt`
+if [ -n $password ] ; then
+    echo "cant find password.txt, so use deafult password(\"pass\")"
+    password="pass"
+fi
 
 docker run \
     -it \
