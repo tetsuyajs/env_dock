@@ -13,6 +13,7 @@ fi
 docker run \
     -it \
     --rm \
+    --gpus all \
     --name $container_name \
     -h $container_name \
     -v $share_hpath:$share_cpath \
