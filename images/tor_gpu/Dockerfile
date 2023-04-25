@@ -47,11 +47,13 @@ RUN set -e \
     && rm get-pip.py \
     && pip install -U --no-cache-dir pip \
     && pip install --no-cache-dir \
+        biopython \
         ipywidgets \
         jupyterlab \
         matplotlib \
         numpy \
         opencv-python \
+        openpyxl \
         pandas \
         pillow \
         seaborn \

@@ -51,6 +51,8 @@ RUN set -e \
         jupyterlab \
         matplotlib \
         numpy \
+        opencv-python \
+        openpyxl \
         pandas \
         pillow \
         seaborn \

@@ -45,12 +45,16 @@ RUN set -e \
     && pip install -U --no-cache-dir pip \
     && pip install --no-cache-dir \
         biopython \
+        graphviz \
         ipywidgets \
         jupyterlab \
         matplotlib \
         numpy \
+        opencv-python \
+        openpyxl \
         pandas \
         pillow \
+        pydot \
         seaborn \
         scikit-learn \
         scipy \
