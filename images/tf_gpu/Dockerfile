@@ -23,6 +23,7 @@ RUN set -e \
         gcc \
         git \
         gosu \
+        graphviz \
         less \
         make \
         openssh-server \
@@ -45,7 +46,6 @@ RUN set -e \
     && pip install -U --no-cache-dir pip \
     && pip install --no-cache-dir \
         biopython \
-        graphviz \
         ipywidgets \
         jupyterlab \
         matplotlib \
@@ -54,7 +54,7 @@ RUN set -e \
         openpyxl \
         pandas \
         pillow \
-        pydot \
+        pydotplus \
         seaborn \
         scikit-learn \
         scipy \
