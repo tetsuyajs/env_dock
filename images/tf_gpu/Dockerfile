@@ -52,6 +52,7 @@ RUN set -e \
         numpy \
         opencv-python \
         openpyxl \
+        optuna \
         pandas \
         pillow \
         pydotplus \
