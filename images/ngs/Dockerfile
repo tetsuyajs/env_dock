@@ -200,6 +200,13 @@ RUN set -e \
     && cd .. \
     && rm -rf miR-pipe
 
+# miRDeep2
+RUN set -e \
+    && git clone https://github.com/rajewsky-lab/mirdeep2.git /usr/local/mirdeep2 \
+    && cd /usr/local/mirdeep2 \
+    && perl install.pl \
+    && source ~/.bashrc \
+    && perl install.pl
 
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
 RUN chmod +x /usr/local/bin/entrypoint.sh
