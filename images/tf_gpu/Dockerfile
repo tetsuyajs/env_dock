@@ -60,6 +60,7 @@ RUN set -e \
         scikit-learn \
         scipy \
         tqdm \
+        xgboost \
         xlrd
 
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
@@ -67,4 +68,8 @@ RUN chmod +x /usr/local/bin/entrypoint.sh
 ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
 EXPOSE 8888 
 
+RUN set -e \
+    && pip install -U --no-cache-dir pip \
+    && pip install --no-cache-dir \
+        xgboost
 
