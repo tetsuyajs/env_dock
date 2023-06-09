@@ -46,7 +46,6 @@ RUN set -e \
     && pip install -U --no-cache-dir pip \
     && pip install --no-cache-dir \
         biopython \
-        ipywidgets \
         jupyterlab \
         matplotlib \
         numpy \
@@ -55,7 +54,6 @@ RUN set -e \
         optuna \
         pandas \
         pillow \
-        pydotplus \
         seaborn \
         scikit-learn \
         scipy \

@@ -53,14 +53,15 @@ RUN set -e \
         numpy \
         opencv-python \
         openpyxl \
+        optuna \
         pandas \
         pillow \
         seaborn \
         scikit-learn \
         scipy \
         tqdm \
+        xgboost \
         xlrd
-
 
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
 RUN chmod +x /usr/local/bin/entrypoint.sh

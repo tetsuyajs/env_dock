@@ -48,17 +48,20 @@ RUN set -e \
     && pip install -U --no-cache-dir pip \
     && pip install --no-cache-dir \
         biopython \
-        ipywidgets \
         jupyterlab \
         matplotlib \
         numpy \
         opencv-python \
         openpyxl \
+        optuna \
         pandas \
         pillow \
         seaborn \
         scikit-learn \
-        scipy
+        scipy \
+        tqdm \
+        xgboost \
+        xlrd
 
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
 RUN chmod +x /usr/local/bin/entrypoint.sh
