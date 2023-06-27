@@ -8,7 +8,7 @@ docker run \
     --rm \
     --name $container_name \
     -h $container_name \
-    -v $share_hpath:$share_cpath \
+    -v /$share_hpath:$share_cpath \
     $image_name \
     $1
 
