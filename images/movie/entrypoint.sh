@@ -22,5 +22,5 @@ cd /out
 if [ $# -eq 0 ]; then
     exec /usr/sbin/gosu user bash
 else
-    exec /usr/sbin/gosu user /usr/local/bin/download.py "$@"
+    exec /usr/sbin/gosu user dl "$@"
 fi

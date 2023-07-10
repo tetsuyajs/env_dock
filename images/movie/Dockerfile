@@ -37,9 +37,9 @@ RUN set -e \
 WORKDIR /out
 
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
-#COPY download.py /usr/local/bin/download.py
+COPY dl /usr/local/bin/dl
 RUN chmod +x /usr/local/bin/entrypoint.sh
-#RUN chmod +x /usr/local/bin/download.py
+RUN chmod +x /usr/local/bin/dl
 ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
 
 
